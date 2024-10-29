@@ -3,8 +3,7 @@
   /* <h2 class="text-[1.8rem] roboto-black my-[1em] text-[var(--colorFour)]">Weather App</h2> */
 }
 
-const API_KEY = "88266b22c7794d92c3ca67d03e2fc369";
-const BASE_URL_WEATHER = "https://api.openweathermap.org/data/2.5/weather";
+
 
 //before
 loading();
