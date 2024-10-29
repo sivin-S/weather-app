@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+   <link rel="stylesheet" href="../style/style.css">
+   <link rel="stylesheet" href="./output.css">
+   <script defer src="../script.mjs"></script>
+</head>
+<body>
+    <!-- grid based of 12 cols  -->
+    <div class="container max-w-full h-screen bg-[var(--colorTwo)] flex items-center justify-center">
+        <div class="row bg-[var(--colorOne)] border-4 border-[var(--colorFour)] rounded-2xl w-[410px] h-[350px] grid grid-col-12 grid-rows-3">
+            <div class="col  text-center">
+                <h2 class="text-[1.8rem] roboto-black my-[1em] text-[var(--colorFour)]">Weather App</h2>
+            </div>
+            <div class="col w-full gap-4 flex items-center justify-center">
+                <input type="text" name="" id="inputBox" placeholder="enter city name" class="border-4 border-[var(--colorTwo)]
+                rounded-lg
+                focus:outline-none
+                 py-3 px-8
+                 text-[var(--colorTwo)]
+                 font-bold
+                "> 
+                <button class="py-1 bg-white w-[5em]
+                rounded-md border-4 border-[var(--colorTwo)] text-[var(--colorOne)] font-medium text-[0.900rem] leading-[1.2]
+                ">Get <br> Weather</button>
+            </div>
+            <div class="col text-center  space-x-4  flex items-center justify-evenly
+            text-[1.8rem] roboto-black my-[1em] text-[var(--colorFour)]
+            " id="resultInsertContainer">
+                <!-- text inject through js  -->
+                 <!-- city  -->
+                 <!-- temp -->
+                 <!-- Weather -->
+                  <div class="">
+                    <p class="text-[1rem]">Temp</p>
+                    <p class="w-[100px] text-ellipsis  overflow-hidden inline-block text-[1.5rem] font-mono text-[var(--colorThree)]">
+                       <!-- temp -->
+                     </p>
+                  </div>
+                  <div class="">
+                    <p class="text-[1rem]">City</p>
+                    <p class="w-[100px] text-ellipsis  overflow-hidden  inline-block  text-[1.5rem] font-mono text-[var(--colorThree)]">
+                        <!-- city  -->
+                     </p>
+                  </div>
+                  <div class="">
+                    <p class="text-[1rem]">Wind speed</p>
+                    <p class="w-[100px] text-ellipsis  overflow-hidden  inline-block text-[1.5rem] font-mono text-[var(--colorThree)]">
+                        <!-- wind speed -->
+                      </p>
+                  </div>
+                 
+                 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
