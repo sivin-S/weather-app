@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+    <!-- css main file contains font & variables -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- production purpose  -->
+    <link rel="stylesheet" href="../public/output.css">
+
+    <!-- dev purpose -->
+    <!-- <link rel="stylesheet" href="../src/output.css"> -->
+
+    <!-- script  -->
+    <script defer src="../public/scripts/script.mjs"></script>
+
+    <!-- cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- grid based of 12 cols  -->
+    <div class="container  max-w-full h-screen bg-[var(--colorTwo)] flex items-center justify-center flex-col gap-4">
+        <div
+            class="row bg-[var(--colorOne)] border-4 border-[var(--colorFour)] rounded-2xl w-[410px] h-[350px] grid grid-col-12 grid-rows-3">
+            <div class="col  text-center">
+                <h2 class="text-[1.8rem] roboto-black my-[1em] text-[var(--colorFour)]">Weather App</h2>
+            </div>
+            <div class="col w-full gap-4 flex items-center justify-center">
+                <input type="text" name="" id="inputBox" placeholder="enter city name" class="border-4 border-[var(--colorTwo)]
+                rounded-lg
+                focus:outline-none
+                 py-3 px-8
+                 text-[var(--colorTwo)]
+                 font-bold
+                ">
+                <button class="py-1 bg-white w-[5em]
+                rounded-md border-4 border-[var(--colorTwo)] text-[var(--colorOne)] font-medium text-[0.900rem] leading-[1.2]
+                ">Get <br> Weather</button>
+            </div>
+            <div class="col text-center  space-x-4  flex items-center justify-evenly
+            text-[1.8rem] roboto-black my-[1em] text-[var(--colorFour)]
+            " id="resultInsertContainer">
+                <!-- text inject through js  -->
+                <!-- city  -->
+                <!-- temp -->
+                <!-- Weather -->
+                <div class="">
+                    <p class="text-[1rem]">Temp</p>
+                    <p
+                        class="w-[100px] text-ellipsis  overflow-hidden inline-block text-[1.5rem] font-mono text-[var(--colorThree)]">
+                        <!-- temp -->
+                    </p>
+                </div>
+                <div class="">
+                    <p class="text-[1rem]">City</p>
+                    <p
+                        class="w-[100px] text-ellipsis  overflow-hidden  inline-block  text-[1.5rem] font-mono text-[var(--colorThree)]">
+                        <!-- city  -->
+                    </p>
+                </div>
+                <div class="">
+                    <p class="text-[1rem]">Wind speed</p>
+                    <p
+                        class="w-[100px] text-ellipsis  overflow-hidden  inline-block text-[1.5rem] font-mono text-[var(--colorThree)]">
+                        <!-- wind speed -->
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="w-[410px]">
+            <button id="currentLocation" class="text-white font-bold rounded-2xl border-4 border-[var(--colorFour)]
+            py-3
+            w-full
+            bg-[var(--colorOne)]
+            ">
+                Get Current Location Weather
+            </button>
+        </div>
+    </div>
+    <!-- loading  -->
+    <div class="container  loadingContainer max-w-full h-screen absolute z-40 bg-[var(--colorThree)] left-0 inset-0 flex items-center justify-center
+    ">
+
+        <i class="fa-solid fa-cloud fa-bounce fa-5x" style="color: #fff;"></i>
+
+    </div>
+</body>
+
+</html>
